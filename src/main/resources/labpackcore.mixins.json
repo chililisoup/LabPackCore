@@ -4,8 +4,7 @@
   "package": "dev.chililisoup.labpackcore.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "BedspreadsAddPatternRecipeMixin",
-    "SupplementariesServerBoundSetTextHolderPacketMixin"
+    "BedspreadsAddPatternRecipeMixin"
   ],
   "client": [
     "AccessorifyInfoOverlaysMixin"

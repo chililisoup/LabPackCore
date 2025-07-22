@@ -98,6 +98,7 @@ dependencies {
     implementation "maven.modrinth:supplementaries:${project.supplementaries_version}"
     implementation "maven.modrinth:fzzy-config:${project.fzzy_config_version}"
     implementation "maven.modrinth:bedspreads:${project.bedspreads_version}-neoforge"
+    implementation "maven.modrinth:elytra-trims:${project.elytra_trims_version}-neoforge"
     implementation "maven.modrinth:neoforge-carpet:${project.carpet_neoforged_version}"
     implementation "dev.emi:emi-neoforge:${project.emi_version}"
 }
