@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.chililisoup.labpackcore.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BedspreadsAddPatternRecipeMixin",
+    "SupplementariesServerBoundSetTextHolderPacketMixin"
+  ],
+  "client": [
+    "AccessorifyInfoOverlaysMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

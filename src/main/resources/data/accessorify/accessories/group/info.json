@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "slots": [
+    "clock",
+    "compass",
+    "altimeter",
+    "calendar",
+    "recovery_compass"
+  ]
+}
