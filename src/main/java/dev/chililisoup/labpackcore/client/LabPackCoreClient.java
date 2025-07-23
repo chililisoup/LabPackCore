@@ -49,7 +49,7 @@ public class LabPackCoreClient {
 
     public static void registerItemColorHandlers(RegisterColorHandlersEvent.Item event) {
         event.register(
-                (stack, tintIndex) -> tintIndex > 0 ? -1 : DyedItemColor.getOrDefault(stack, 0xFF8F8FB3),
+                (stack, tintIndex) -> tintIndex > 0 ? -1 : DyedItemColor.getOrDefault(stack, 0xFF7F8F9F),
                 Items.ELYTRA
         );
     }

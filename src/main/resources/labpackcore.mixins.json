@@ -4,10 +4,13 @@
   "package": "dev.chililisoup.labpackcore.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "BedspreadsAddPatternRecipeMixin"
+    "BannerItemMixin",
+    "BedspreadsAddPatternRecipeMixin",
+    "LoomMenuMixin"
   ],
   "client": [
-    "AccessorifyInfoOverlaysMixin"
+    "AccessorifyInfoOverlaysMixin",
+    "LoomScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1

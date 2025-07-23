@@ -17,6 +17,8 @@ public class LabPackCore {
     public static final String MOD_ID = "labpackcore";
     private static final Logger LOGGER = LogUtils.getLogger();
 
+    public static final int MAX_BANNER_PATTERNS = 8;
+
     public static ResourceLocation loc(String id) {
         return ResourceLocation.fromNamespaceAndPath(MOD_ID, id);
     }
