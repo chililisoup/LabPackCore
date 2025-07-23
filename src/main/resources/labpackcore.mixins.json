@@ -6,7 +6,8 @@
   "mixins": [
     "BannerItemMixin",
     "BedspreadsAddPatternRecipeMixin",
-    "LoomMenuMixin"
+    "LoomMenuMixin",
+    "SupplementariesFlagFromBannerRecipeMixin"
   ],
   "client": [
     "AccessorifyInfoOverlaysMixin",
