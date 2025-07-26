@@ -6,6 +6,8 @@
   "mixins": [
     "BannerItemMixin",
     "BedspreadsAddPatternRecipeMixin",
+    "CACGrapplingHookEntityMixin",
+    "CACGrapplingHookItemMixin",
     "LoomMenuMixin",
     "SupplementariesFlagFromBannerRecipeMixin"
   ],
