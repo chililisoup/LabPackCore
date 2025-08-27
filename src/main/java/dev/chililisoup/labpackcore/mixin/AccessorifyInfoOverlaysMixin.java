@@ -50,6 +50,7 @@ public abstract class AccessorifyInfoOverlaysMixin {
 
         boolean altimeter = ModUtil.accessoryEquipped(MC.player, ModRegistry.ALTIMETER_ITEM.get());
         boolean compass = ModUtil.accessoryEquipped(MC.player, Items.COMPASS);
+        if (!altimeter && !compass) return;
 
         if ((altimeter && compass) || (compass && shouldObfuscateCompass)) {
             prepareCompassOverlay(shouldObfuscateCompass);
@@ -74,7 +75,9 @@ public abstract class AccessorifyInfoOverlaysMixin {
             ResourceLocation biome = MC.player.level().getBiome(blockPos).unwrap().map(
                     key -> key != null ? key.location() : null, unknown -> null
             );
-            Component biomeName = Component.translatable("biome." + biome.getNamespace() + "." + biome.getPath());
+            Component biomeName = biome == null ?
+                    Component.literal("Unknown") :
+                    Component.translatable("biome." + biome.getNamespace() + "." + biome.getPath());
             renderList.add(new ObjectIntImmutablePair<>(biomeName, 0xffffff));
         }
     }
