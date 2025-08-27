@@ -4,6 +4,7 @@
   "package": "dev.chililisoup.labpackcore.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "AccessorifyModUtilMixin",
     "BannerItemMixin",
     "BedspreadsAddPatternRecipeMixin",
     "CACGrapplingHookEntityMixin",
@@ -12,8 +13,8 @@
     "SupplementariesFlagFromBannerRecipeMixin"
   ],
   "client": [
-    "AccessorifyInfoOverlaysMixin",
-    "LoomScreenMixin"
+    "client.AccessorifyInfoOverlaysMixin",
+    "client.LoomScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1

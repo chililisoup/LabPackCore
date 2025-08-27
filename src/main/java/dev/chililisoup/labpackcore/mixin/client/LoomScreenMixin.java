@@ -1,4 +1,4 @@
-package dev.chililisoup.labpackcore.mixin;
+package dev.chililisoup.labpackcore.mixin.client;
 
 import dev.chililisoup.labpackcore.LabPackCore;
 import net.minecraft.client.gui.screens.inventory.LoomScreen;

@@ -1,4 +1,4 @@
-package dev.chililisoup.labpackcore.mixin;
+package dev.chililisoup.labpackcore.mixin.client;
 
 import com.llamalad7.mixinextras.sugar.Local;
 import dev.chililisoup.labpackcore.client.ClientConfig;
