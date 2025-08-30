@@ -1,4 +1,4 @@
-package dev.chililisoup.labpackcore.mixin;
+package dev.chililisoup.labpackcore.mixin.crittersandcompanions;
 
 import com.github.eterdelta.crittersandcompanions.extension.IGrapplingState;
 import com.github.eterdelta.crittersandcompanions.item.GrapplingHookItem;
@@ -19,7 +19,7 @@ import org.spongepowered.asm.mixin.injection.ModifyArg;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(GrapplingHookItem.class)
-public abstract class CACGrapplingHookItemMixin {
+public abstract class GrapplingHookItemMixin {
     @ModifyArg(method = "<init>", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/item/Item;<init>(Lnet/minecraft/world/item/Item$Properties;)V"))
     private static Item.Properties modifyProperties(Item.Properties properties) {
         return properties.durability(64);

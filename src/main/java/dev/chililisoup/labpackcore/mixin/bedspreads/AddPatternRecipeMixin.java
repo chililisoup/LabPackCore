@@ -1,4 +1,4 @@
-package dev.chililisoup.labpackcore.mixin;
+package dev.chililisoup.labpackcore.mixin.bedspreads;
 
 import com.illusivesoulworks.bedspreads.common.DecoratedBedItem;
 import com.illusivesoulworks.bedspreads.common.recipe.AddPatternRecipe;
@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
 @Mixin(AddPatternRecipe.class)
-public abstract class BedspreadsAddPatternRecipeMixin {
+public abstract class AddPatternRecipeMixin {
     @Unique private static Item labpackcore$transformItem(ItemStack stack) {
         Item item = stack.getItem();
         if (item instanceof DecoratedBedItem) return Items.AIR;

@@ -1,4 +1,4 @@
-package dev.chililisoup.labpackcore.mixin.client;
+package dev.chililisoup.labpackcore.mixin.accessorify.client;
 
 import com.llamalad7.mixinextras.sugar.Local;
 import dev.chililisoup.labpackcore.client.ClientConfig;
@@ -26,7 +26,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Mixin(InfoOverlays.class)
-public abstract class AccessorifyInfoOverlaysMixin {
+public abstract class InfoOverlaysMixin {
     @Shadow private static final List<ObjectIntImmutablePair<Component>> renderList = new ArrayList<>();
     @Shadow private static final Minecraft MC = Minecraft.getInstance();
 

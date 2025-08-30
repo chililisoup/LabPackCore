@@ -4,16 +4,16 @@
   "package": "dev.chililisoup.labpackcore.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "AccessorifyModUtilMixin",
+    "accessorify.ModUtilMixin",
     "BannerItemMixin",
-    "BedspreadsAddPatternRecipeMixin",
-    "CACGrapplingHookEntityMixin",
-    "CACGrapplingHookItemMixin",
+    "bedspreads.AddPatternRecipeMixin",
+    "crittersandcompanions.GrapplingHookEntityMixin",
+    "crittersandcompanions.GrapplingHookItemMixin",
     "LoomMenuMixin",
-    "SupplementariesFlagFromBannerRecipeMixin"
+    "supplementaries.FlagFromBannerRecipeMixin"
   ],
   "client": [
-    "client.AccessorifyInfoOverlaysMixin",
+    "accessorify.client.InfoOverlaysMixin",
     "client.LoomScreenMixin"
   ],
   "injectors": {
