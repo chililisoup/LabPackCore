@@ -13,6 +13,7 @@
     "supplementaries.FlagFromBannerRecipeMixin"
   ],
   "client": [
+    "amendments.client.ClientResourceGeneratorMixin",
     "accessorify.client.InfoOverlaysMixin",
     "client.LoomScreenMixin"
   ],
