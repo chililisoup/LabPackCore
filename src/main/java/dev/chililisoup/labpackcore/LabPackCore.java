@@ -15,7 +15,7 @@ import org.slf4j.Logger;
 @Mod(LabPackCore.MOD_ID)
 public class LabPackCore {
     public static final String MOD_ID = "labpackcore";
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public static final int MAX_BANNER_PATTERNS = 8;
 
