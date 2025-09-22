@@ -18,6 +18,7 @@
   "client": [
     "accessorify.client.InfoOverlaysMixin",
     "amendments.client.ClientResourceGeneratorMixin",
+    "client.LightTextureMixin",
     "client.LoomScreenMixin"
   ],
   "injectors": {
