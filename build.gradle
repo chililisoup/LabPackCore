@@ -104,6 +104,7 @@ dependencies {
     implementation "maven.modrinth:fzzy-config:${project.fzzy_config_version}"
     implementation "maven.modrinth:bedspreads:${project.bedspreads_version}-neoforge"
     implementation "maven.modrinth:elytra-trims:${project.elytra_trims_version}-neoforge"
+    implementation "maven.modrinth:horseman:${project.horseman_version}-neoforge"
     implementation "maven.modrinth:critters-and-companions:${project.critters_and_companions_version}-neoforge"
     implementation "maven.modrinth:shulkerboxtooltip:${project.shulkerboxtooltip_version}"
     implementation "maven.modrinth:neoforge-carpet:${project.carpet_neoforged_version}"

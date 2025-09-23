@@ -8,6 +8,7 @@ import dev.emi.emi.EmiUtil;
 import dev.emi.emi.api.EmiEntrypoint;
 import dev.emi.emi.api.EmiPlugin;
 import dev.emi.emi.api.EmiRegistry;
+import dev.emi.emi.api.recipe.EmiCraftingRecipe;
 import dev.emi.emi.api.recipe.EmiPatternCraftingRecipe;
 import dev.emi.emi.api.stack.EmiStack;
 import dev.emi.emi.api.stack.TagEmiIngredient;
@@ -16,6 +17,7 @@ import dev.emi.emi.api.widget.SlotWidget;
 import dev.emi.emi.recipe.special.EmiBannerDuplicateRecipe;
 import dev.emi.emi.recipe.special.EmiBannerShieldRecipe;
 import dev.emi.emi.registry.EmiTags;
+import io.github.mortuusars.horseman.Horseman;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
@@ -40,6 +42,17 @@ public class EmiCompat implements EmiPlugin {
             registry.addRecipe(new DecoratedBedRemovePatternRecipe(
                     item, LabPackCore.loc("/decorated_bed_remove_pattern" + EmiUtil.subId(item))
             ));
+
+        registry.addRecipe(new EmiCraftingRecipe(
+                List.of(
+                        EmiStack.of(Items.GOAT_HORN),
+                        EmiStack.of(Items.COPPER_INGOT),
+                        EmiStack.of(Items.COPPER_INGOT),
+                        EmiStack.of(Items.COPPER_INGOT)
+                ),
+                EmiStack.of(Horseman.Items.COPPER_HORN.get()),
+                LabPackCore.loc("/copper_horn")
+        ));
     }
 
     private static EmiStack getPattern(Random random, @Nullable Item item, List<EmiStack> beds, Item banner) {
