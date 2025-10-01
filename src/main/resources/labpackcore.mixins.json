@@ -11,6 +11,7 @@
     "bedspreads.AddPatternRecipeMixin",
     "crittersandcompanions.GrapplingHookEntityMixin",
     "crittersandcompanions.GrapplingHookItemMixin",
+    "everycompat.EveryCompatMixin",
     "supplementaries.FlagFromBannerRecipeMixin",
     "supplementaries.ShulkerBoxTooltipCompatMixin",
     "suppsquared.SuppSquaredMixin"
