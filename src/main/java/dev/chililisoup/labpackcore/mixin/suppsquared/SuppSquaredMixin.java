@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.At;
 
 @Mixin(SuppSquared.class)
 public abstract class SuppSquaredMixin {
-    @WrapOperation(method = "lambda$static$20", remap = false, at = @At(value = "INVOKE", target = "Lnet/minecraft/world/item/Item$Properties;stacksTo(I)Lnet/minecraft/world/item/Item$Properties;"))
+    @WrapOperation(method = "lambda$static$23", remap = false, at = @At(value = "INVOKE", target = "Lnet/minecraft/world/item/Item$Properties;stacksTo(I)Lnet/minecraft/world/item/Item$Properties;"))
     private static Item.Properties fixSackComponents(Item.Properties properties, int maxStackSize, Operation<Item.Properties> original) {
         return original.call(properties, maxStackSize).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY);
     }
