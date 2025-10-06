@@ -3,6 +3,7 @@ package dev.chililisoup.labpackcore;
 import com.mojang.logging.LogUtils;
 import dev.chililisoup.labpackcore.carpet.LabPackCarpetServer;
 import dev.chililisoup.labpackcore.client.LabPackCoreClient;
+import dev.chililisoup.labpackcore.reg.ModDispenserBehaviors;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -24,6 +25,8 @@ public class LabPackCore {
     }
 
     public LabPackCore(IEventBus modEventBus, ModContainer modContainer) {
+        ModDispenserBehaviors.init();
+
         modEventBus.addListener(this::onInitialize);
 
         if (FMLEnvironment.dist == Dist.CLIENT)

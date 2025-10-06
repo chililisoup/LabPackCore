@@ -107,6 +107,7 @@ dependencies {
     implementation "maven.modrinth:elytra-trims:${project.elytra_trims_version}-neoforge"
     implementation "maven.modrinth:horseman:${project.horseman_version}-neoforge"
     implementation "maven.modrinth:critters-and-companions:${project.critters_and_companions_version}-neoforge"
+    implementation "maven.modrinth:spring-to-life-backport:${project.spring_to_life_backport_version}-neoforge"
     implementation "maven.modrinth:shulkerboxtooltip:${project.shulkerboxtooltip_version}"
     implementation "maven.modrinth:neoforge-carpet:${project.carpet_neoforged_version}"
     implementation "dev.emi:emi-neoforge:${project.emi_version}"
