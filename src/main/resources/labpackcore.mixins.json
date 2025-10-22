@@ -5,6 +5,8 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "BannerItemMixin",
+    "DataFixersMixin",
+    "DetectedVersionMixin",
     "LoomMenuMixin",
     "accessorify.ModUtilMixin",
     "ali.AliCommonRegistryMixin",
