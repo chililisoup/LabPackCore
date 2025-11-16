@@ -112,6 +112,7 @@ dependencies {
     implementation "maven.modrinth:neoforge-carpet:${project.carpet_neoforged_version}"
     implementation "dev.emi:emi-neoforge:${project.emi_version}"
     implementation "maven.modrinth:advanced-loot-info:${project.advanced_loot_info_version}-neoforge"
+    implementation "maven.modrinth:soulbound-enchantment:${project.soulbound_version}-neoforge"
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

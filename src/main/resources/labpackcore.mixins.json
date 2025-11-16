@@ -8,6 +8,7 @@
     "DataFixersMixin",
     "DetectedVersionMixin",
     "LoomMenuMixin",
+    "accessories.AccessoryMixin",
     "accessorify.ModUtilMixin",
     "ali.AliCommonRegistryMixin",
     "bedspreads.AddPatternRecipeMixin",
